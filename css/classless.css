@@ -9,12 +9,14 @@
   --text: #000;
   --text-light: #222;
   --border: #888;
-  --accent: #bff;
-  --code: rgb(252, 93, 93);
+  --accent: #33e;
+  --code: #e33;
   --preformatted: #444;
-  --marked: #ffd;
+  --marked: #fd3;
   --disabled: #eee;
+
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root,
@@ -24,7 +26,7 @@
     --accent-bg: #111;
     --text: #fff;
     --text-light: #ddd;
-    --accent: #fbb;
+    --accent: rgb(59, 174, 250);
     --code: #0dd;
     --preformatted: #333;
     --disabled: #111;
@@ -193,7 +195,7 @@ input[type="submit"]:enabled:hover,
 input[type="reset"]:enabled:hover,
 input[type="button"]:enabled:hover,
 label[type="button"]:hover {
-  filter: brightness(1.4);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
   cursor: pointer;
 }
 
