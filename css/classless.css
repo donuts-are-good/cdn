@@ -196,8 +196,11 @@ input[type="reset"]:enabled:hover,
 input[type="button"]:enabled:hover,
 label[type="button"]:hover {
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  transform: translate(-2px, -2px);
+  transition: transform 0.2s ease-out;
   cursor: pointer;
 }
+
 
 .button:focus-visible,
 button:focus-visible:where(:enabled),
